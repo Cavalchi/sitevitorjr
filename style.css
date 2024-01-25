@@ -120,9 +120,9 @@ input {
 
 .instagram {
   width: 1.5em;
-  margin-left: 39%;
+  margin-left: 43%;
   margin-bottom: 4.8%;
-  margin-top: 0.2%;
+  margin-top: 0.4%;
 }
 
 .linkedin-icon {
@@ -138,26 +138,30 @@ input {
 }
 
 .Email-icon {
-  width: 2em;
-  margin-left: 39%;
-  margin-bottom: 5%;
-}
-p.COPYRIGHT{
-  font-size: 0.8em;
-  width: 2%;
-  margin-top: -4.5%;
-  margin-left: 36%;
-  color: #000;
-  white-space: nowrap;
+  width: 1.5em;
+  margin-left: 31.9%;
+  margin-bottom: 4.5%;
+  margin-top: 0.2%;
 }
 
-p.emailvs{
-  font-size: 0.8em;
+p.COPYRIGHT {
+  font-size: 0.7em;
   width: 2%;
-  margin-top: -6.5%;
-  margin-left: 43%;
+  margin-top: 1.7%;
+  margin-left: 42%;
   color: #000;
   white-space: nowrap;
+  position: relative;
+}
+
+p.emailvs {
+  font-size: 1em;
+  width: 2%;
+  margin-top: -5.6%;
+  margin-left: 86.5%;
+  color: #000000;
+  white-space: nowrap;
+  position: relative;
 }
 
 footer {
