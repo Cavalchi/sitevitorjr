@@ -173,34 +173,38 @@ footer {
 }
 
 .menu {
-    position: fixed;
-    top: 0;
-    right: 0;
-    width: 50%; /* Ajuste para o tamanho desejado */
-    height: 50%; /* Ajuste para o tamanho desejado */
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 50%;
+  /* Ajuste para o tamanho desejado */
+  height: 50%;
+  /* Ajuste para o tamanho desejado */
 }
 
 .menu {
-    cursor: pointer;    
-    width: 0.1%;  /* Ajuste para o tamanho desejado */
-    margin-right: 50%;
- 
+  cursor: pointer;
+  width: 0.1%;
+  /* Ajuste para o tamanho desejado */
+  margin-right: 50%;
+
 }
 
 #menu-options {
-    display: none;
-    position: absolute;
-    top: 100%;
-    right: 0;
-    transition: transform 0.3s ease-in-out;
-    transform: translateY(-100%);
+  display: none;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  transition: transform 0.3s ease-in-out;
+  transform: translateY(-100%);
 }
 
 #menu-options a {
-    display: block;
-    padding: 10px;
-    text-decoration: none;
-    color: #fff; /* Altera a cor do texto para branco */
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: #fff;
+  /* Altera a cor do texto para branco */
 }
 
 @media (max-width: 600px) {
@@ -209,12 +213,13 @@ footer {
     height: 100%;
   }
 }
+
 #menu-options {
   display: none;
   /* outros estilos */
 }
 
-#menu-toggle:checked ~ #menu-options {
+#menu-toggle:checked~#menu-options {
   display: block;
 }
 
@@ -230,12 +235,13 @@ details.menufuncao {
   right: 0;
   top: 0;
 }
-details > summary {
+
+details>summary {
   list-style: none;
 }
 
 /* Adiciona uma seta personalizada */
-details > summary:before {
+details>summary:before {
   content: '\f0c9';
   font-family: 'Font Awesome 5 Free';
   font-weight: 900;
@@ -246,24 +252,65 @@ details > summary:before {
 }
 
 /* Rotaciona a seta quando o menu está aberto */
-details[open] > summary:before {
+details[open]>summary:before {
   transform: rotate(0deg);
 }
 
-  .subtitle {
-    text-decoration: none;
-    color: #fff;
-    transition: color 0.3s ease;
-  }
-  
-  .subtitle:hover {
-    color: #00C5FF;
-    position: relative;
-  }
+.subtitle {
+  text-decoration: none;
+  color: #fff;
+  transition: color 0.3s ease;
+}
 
-  .title:hover {
+.subtitle:hover {
+  color: #00C5FF;
+  position: relative;
+}
 
-    color:  #00C5FF;
-    position: relative;
-  }
-  
+.top {
+  position: sticky;
+  bottom: 20px;
+  margin-right: 10px;
+
+  /* visual styling */
+  width: 100%;
+  aspect-ratio: 1;
+  background: #00C5FF;
+  border-radius: 10px;
+}
+
+.top:before {
+  content: "";
+  position: absolute;
+  inset: 30%;
+  transform: translateY(20%) rotate(-45deg);
+  border-top: 5px solid #000000;
+  border-right: 5px solid #000000;
+}
+
+.title:hover {
+
+  color: #00C5FF;
+  position: relative;
+}
+
+.top {
+  position: sticky;
+  bottom: 20px;
+  margin-right: 10px;
+
+  /* visual styling */
+  width: 100%;
+  aspect-ratio: 1;
+  background: #00C5FF;
+  border-radius: 10px;
+}
+
+.top:before {
+  content: "";
+  position: absolute;
+  inset: 30%;
+  transform: translateY(20%) rotate(-45deg);
+  border-top: 5px solid #000000;
+  border-right: 5px solid #000000;
+}
