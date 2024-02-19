@@ -5,6 +5,7 @@
   font-family: Helvetica, sans-serif;
   color: #fff;
   border: none;
+  text-decoration: none;
 }
 
 body {
@@ -33,10 +34,18 @@ body {
 }
 
 .logovitor {
-  width: 2%;
+  width: 2.5%;
   margin-left: 50%;
 }
 
+@media(max-width: 600px) {
+  .logovitor {
+    width: 8%;
+    margin-left: 50%;
+  }
+}
+
+/* Estilos para telas de computador */
 .video-container,
 .text-container {
   display: inline-block;
@@ -47,8 +56,35 @@ body {
   width: 60%;
 }
 
+.my-video {
+  margin-left: 7em;
+  margin-top: 8em;
+  width: 42em;
+}
+
+.trabalhos {
+  margin-left: -7em;
+  margin-top: 7em;
+  font-size: 2em;
+
+}
+
 .text-container {
   width: 40%;
+}
+ul {
+  list-style-type: none;
+}
+
+
+/* Estilos para telas de celulares */
+@media (max-width: 600px) {
+
+  .video-container,
+  .text-container {
+    display: block;
+    width: 100%;
+  }
 }
 
 h1 {
@@ -66,7 +102,7 @@ form {
 h2 {
   padding-left: 33%;
   font-size: 2rem;
-  margin-top: 2%;
+  margin-top: 0%;
 }
 
 @media (max-width: 600px) {
@@ -231,15 +267,17 @@ footer {
 }
 
 
-
 details.menufuncao {
   position: fixed;
   right: 0;
   top: 0;
+  text-decoration: none;
+  overflow: auto; /* Adicionado aqui */
 }
 
 details>summary {
   list-style: none;
+  text-decoration: none;
 }
 
 /* Adiciona uma seta personalizada */
@@ -249,16 +287,14 @@ details>summary:before {
   font-weight: 900;
   color: #a6a6a6;
   display: inline-block;
-  margin-right: 2em;
-  margin-top: 0.5em;
+  margin-right: 5em;
+  margin-top: 1.5em;
   font-size: 2em;
   transition: transform 0.3s ease-in-out;
+  
 }
 
-/* Rotaciona a seta quando o menu está aberto */
-details[open]>summary:before {
-  transform: rotate(0deg);
-}
+
 
 .subtitle {
   text-decoration: none;
@@ -269,6 +305,10 @@ details[open]>summary:before {
 .subtitle:hover {
   color: #00C5FF;
   position: relative;
+}
+
+.title{
+  margin-right: 2em;
 }
 
 .top {
@@ -292,11 +332,6 @@ details[open]>summary:before {
   border-right: 5px solid #000000;
 }
 
-.title:hover {
-
-  color: #00C5FF;
-  position: relative;
-}
 
 .top {
   position: sticky;
