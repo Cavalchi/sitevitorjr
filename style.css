@@ -230,6 +230,8 @@ footer {
   padding: 10px;
 }
 
+
+
 details.menufuncao {
   position: fixed;
   right: 0;
@@ -247,7 +249,9 @@ details>summary:before {
   font-weight: 900;
   color: #a6a6a6;
   display: inline-block;
-  margin-right: 6px;
+  margin-right: 2em;
+  margin-top: 0.5em;
+  font-size: 2em;
   transition: transform 0.3s ease-in-out;
 }
 
